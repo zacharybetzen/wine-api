@@ -19,7 +19,7 @@ export const WineCard = {
 
   Winery: {
     tag: 'span',
-    text: (el, s) => s.winery || '',
+    text: 'text',
     fontSize: '12px',
     color: '#64748b'
   },

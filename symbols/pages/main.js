@@ -26,7 +26,8 @@ export const main = {
     gridTemplateColumns: 'repeat(3, 1fr)',
     gap: '24px',
     width: '100%',
-    $children: (el, s) => s.wines,
+    children: (el, s) => s.wines,
+    childrenAs: 'state',
     childExtends: 'WineCard'
   }
 }
