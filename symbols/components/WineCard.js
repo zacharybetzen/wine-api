@@ -19,7 +19,7 @@ export const WineCard = {
 
   Winery: {
     tag: 'span',
-    text: 'text',
+    text: (el, s) => s.winery || '',
     fontSize: '12px',
     color: '#64748b'
   },
@@ -38,5 +38,28 @@ export const WineCard = {
     text: (el, s) => s.location || '',
     fontSize: '13px',
     color: '#475569'
+  },
+
+  Reviews: {
+    extends: 'Flex',
+    flow: 'row',
+    align: 'center',
+    gap: 'Z',
+    marginTop: '4px',
+
+    Rating: {
+      tag: 'span',
+      text: (el, s) => '⭐ ' + (s.rating?.average || 'N/A'),
+      fontSize: '14px',
+      fontWeight: '600',
+      color: '#f59e0b'
+    },
+
+    ReviewCount: {
+      tag: 'span',
+      text: (el, s) => (s.rating?.reviews || '0') || '0 ratings',
+      fontSize: '12px',
+      color: '#64748b'
+    }
   }
 }
