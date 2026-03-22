@@ -8,6 +8,11 @@ export const WineCard = {
   boxShadow: '10px 5px 15px rgba(0, 0, 0, 0.05)',
   borderRadius: '16px',
   padding: '12px',
+  transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+  hover: {
+    transform: 'translateY(-4px)',
+    boxShadow: '10px 10px 20px rgba(0, 0, 0, 0.1)'
+  },
 
   state: {
     showLightbox: false
@@ -35,7 +40,12 @@ export const WineCard = {
       justify: 'center',
       borderRadius: '50%',
       background: '#f8f8f8ff',
-      boxShadow: '10px 5px 5px rgba(0, 0, 0, 0.05)'
+      boxShadow: '10px 5px 5px rgba(0, 0, 0, 0.05)',
+      transition: 'transform 0.2s ease, background 0.2s ease',
+      hover: {
+        transform: 'scale(1.1)',
+        background: '#fff0f0'
+      }
     },
 
     WineImage: {
@@ -86,6 +96,11 @@ export const WineCard = {
       align: 'center',
       justify: 'center',
       boxShadow: '10px 5px 5px rgba(0, 0, 0, 0.05)',
+      transition: 'background 0.2s ease, transform 0.2s ease',
+      hover: {
+        background: 'rgba(255, 255, 255, 0.25)',
+        transform: 'scale(1.1)'
+      },
       on: {
         click: (ev, el, s) => {
           s.update({ showLightbox: false })

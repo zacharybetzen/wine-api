@@ -41,10 +41,11 @@ export const main = {
       fontSize: '14px',
       color: '#9ca3af',
       justify: 'center',
-      Link1: { padding: '12px', tag: 'span', text: 'Discover', cursor: 'pointer', color: 'white' },
-      Link2: { padding: '12px', tag: 'span', text: 'Collections', cursor: 'pointer' },
-      Link3: { padding: '12px', tag: 'span', text: 'Regions', cursor: 'pointer' },
-      Link4: { padding: '12px', tag: 'span', text: 'Offers', cursor: 'pointer' }
+      childExtends: 'NavLink',
+      Link1: { text: 'Discover', color: 'white' },
+      Link2: { text: 'Collections' },
+      Link3: { text: 'Regions' },
+      Link4: { text: 'Offers' }
     },
 
     RightActions: {

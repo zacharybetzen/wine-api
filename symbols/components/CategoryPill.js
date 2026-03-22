@@ -8,6 +8,11 @@ export const CategoryPill = {
   fontSize: '14px',
   fontWeight: '500',
   cursor: 'pointer',
+  transition: 'transform 0.2s ease, opacity 0.2s ease',
+  hover: {
+    transform: 'scale(1.05)',
+    opacity: '0.9'
+  },
   on: {
     click: (ev, el, s) => {
       const wineType = el.props.value
