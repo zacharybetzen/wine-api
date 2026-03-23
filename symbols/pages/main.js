@@ -32,7 +32,7 @@ export const main = {
       padding: '12px',
       justify: 'center',
       Icon: { tag: 'span', text: '🍷', fontSize: '24px' },
-      Text: { tag: 'span', text: 'VinoSphere', fontSize: '20px', fontWeight: '700' }
+      Text: { tag: 'span', text: 'Wine List API', fontSize: '20px', fontWeight: '700' }
     },
 
     NavLinks: {
